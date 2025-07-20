@@ -39,10 +39,13 @@ graph TB
     CLEANUP --> FS
     HEARTBEAT --> WS
     
-    style API fill:#ff6b6b
-    style WS fill:#4ecdc4
-    style FS fill:#45b7d1
-    style ST fill:#96ceb4
+    style API fill:#3b82f6
+    style WS fill:#10b981
+    style FS fill:#f59e0b
+    style ST fill:#8b5cf6
+    style FE fill:#ef4444
+    style CLEANUP fill:#06b6d4
+    style HEARTBEAT fill:#84cc16
 ```
 
 ### Core Components
@@ -163,9 +166,14 @@ flowchart TD
     F --> G[Broadcast to Room]
     G --> H[Users Receive File Info]
     
-    style B fill:#ffeb3b
-    style D fill:#f44336
-    style E fill:#4caf50
+    style A fill:#3b82f6
+    style B fill:#f59e0b
+    style C fill:#10b981
+    style D fill:#ef4444
+    style E fill:#8b5cf6
+    style F fill:#06b6d4
+    style G fill:#84cc16
+    style H fill:#f97316
 ```
 
 ### 4. User Management
@@ -413,10 +421,18 @@ graph TB
     OF --> OD
     OD --> ST
     
-    style HB fill:#ff6b6b
-    style ER fill:#4ecdc4
-    style GU fill:#45b7d1
-    style OF fill:#96ceb4
+    style HB fill:#3b82f6
+    style SC fill:#10b981
+    style TO fill:#f59e0b
+    style ER fill:#8b5cf6
+    style SR fill:#06b6d4
+    style DC fill:#84cc16
+    style GU fill:#ef4444
+    style SU fill:#f97316
+    style DP fill:#ec4899
+    style OF fill:#6366f1
+    style OD fill:#14b8a6
+    style ST fill:#fbbf24
 ```
 
 #### **Layer 1: Connection-Level Cleanup**
@@ -455,10 +471,18 @@ flowchart TD
     H --> K[Clean Firestore Data]
     I --> L[Update Global User Status]
     
-    style A fill:#ff6b6b
-    style C fill:#f44336
-    style H fill:#4caf50
-    style K fill:#2196f3
+    style A fill:#3b82f6
+    style B fill:#f59e0b
+    style C fill:#ef4444
+    style D fill:#8b5cf6
+    style E fill:#06b6d4
+    style F fill:#84cc16
+    style G fill:#f97316
+    style H fill:#10b981
+    style I fill:#ec4899
+    style J fill:#6366f1
+    style K fill:#14b8a6
+    style L fill:#fbbf24
 ```
 
 ### Cleanup Configuration
